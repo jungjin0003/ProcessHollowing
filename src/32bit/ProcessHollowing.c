@@ -100,7 +100,7 @@ int ProcessHollowing(char *DestinationProgramPath, char *SourceProgramPath)
     }
 
     printf("[*] Source ImageBase : 0x%p\n", SrcImageBase);
-    printf("[*] Destination ImageBase : 0x%p\n", DestImageBase/*peb.ImageBaseAddress*/);
+    printf("[*] Destination ImageBase : 0x%p\n", peb.ImageBaseAddress);
 
     NT->OptionalHeader.ImageBase = DestImageBase;
 
